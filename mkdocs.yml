@@ -8,4 +8,5 @@ docs_dir: guides
 site_dir: _site/
 nav:
     - Home: index.md
-theme: readthedocs
+    - Installing rAthena: installing.md
+theme: material
