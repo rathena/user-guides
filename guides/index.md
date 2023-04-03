@@ -21,7 +21,9 @@ There are a multitude of guides available on the forums, too, though many are ex
 This guidebook is split into several sections for ease-of-use. Simply click around and follow links to where you need to go, or try searching for what you need using the search bar at the top of the page.
 
 ### How Do I Contribute?
-If you have a guide you would like to share with the community, you can submit a pull request to the [rAthena User-Guides Repository](https://github.com/rathena/user-guides/) on GitHub. Please ensure that your guide sits in the correct folder, and that it is written in Markdown. If you are unfamiliar with Markdown, you can use [StackEdit](https://stackedit.io/app#) to write your guide in Markdown, or use the [GitHub Markdown Editor](https://jbt.github.io/markdown-editor/) to preview your guide as you write it.
+If you have a guide you would like to share with the community, you can submit a pull request to the [rAthena User-Guides Repository](https://github.com/rathena/user-guides/) on GitHub. Have a look at our [CONTRIBUTING.md](https://github.com/rathena/user-guides/blob/master/CONTRIBUTING.md) file for an in-depth process.
+
+If you are unfamiliar with Markdown, you can use [StackEdit](https://stackedit.io/app#) to write your guide in Markdown, or use the [GitHub Markdown Editor](https://jbt.github.io/markdown-editor/) to preview your guide as you write it.
 
 ### How Do I Get Help?
 If you have any questions about these guides, or feel that any of them need clarifying, feel free to shoot a message into the `#user-guides` channel on our [Discord](https://discord.gg/kMeMXWEvSV) server.

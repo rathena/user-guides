@@ -7,6 +7,16 @@ copyright: Copyright rAthena Development Team, 2011 - 2023
 docs_dir: guides
 site_dir: _site/
 nav:
-    - Home: index.md
-    - Installing rAthena: installing.md
+    - Guides Home: index.md
+    - Installing rAthena:
+      - General: installing.md
+      - Installing on Debian: installing/debian.md
+    #- Network Settings: network-settings.md
+    #- MySQL Tables: mysql-tables.md
+    - Links:
+      - Github: https://github.com/rathena/
+      - Forums: https://rathena.org/board/
+      - Wiki: https://rathena.org/wiki/
+      - Discord: https://discord.gg/kMeMXWEvSV
+
 theme: material
