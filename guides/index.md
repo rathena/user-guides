@@ -4,7 +4,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/rathena/user-guides?label=last%20update&style=for-the-badge)](https://github.com/rathena/user-guides/commits/master) 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rathena/user-guides/deploy_guides.yml?label=automatic%20building&style=for-the-badge)](https://github.com/rathena/user-guides/actions)
 
-## Hello~! What?!
+# Hello~! What?!
 Welcome to User Guides, the community driven guidebook for rAthena. This is a place where you can find guides on how to install, configure, and use rAthena. If you have any questions, feel free to ask in the [rAthena Forums](https://rathena.org/board/) or our [Discord](https://discord.gg/kMeMXWEvSV) server.
 
 ## Why Should I Use This?
