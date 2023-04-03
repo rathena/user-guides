@@ -1,6 +1,7 @@
 [![GitHub](https://img.shields.io/github/license/rathena/rathena?style=for-the-badge)](https://github.com/rathena/rathena/blob/master/LICENSE) 
-[![GitHub last commit](https://img.shields.io/github/last-commit/rathena/user-guides?label=last%20update&style=for-the-badge)](https://github.com/rathena/user-guides/commits/master) 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rathena/user-guides/deploy_guides.yml?label=automatic%20building&style=for-the-badge)](https://github.com/rathena/user-guides/actions)
+[![GitHub last commit](https://img.shields.io/github/last-commit/rathena/user-guides?label=updated&style=for-the-badge)](https://github.com/rathena/user-guides/commits/master) 
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rathena/user-guides/deploy_guides.yml?label=automatic%20building&style=for-the-badge)](https://github.com/rathena/user-guides/actions) 
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/rathena/user-guides?label=Open%20PR&style=for-the-badge)
 
 # Welcome to User-Guides
 A collection of user-submitted guides in markdown format, for both easy-reading and for automated generation via mkdocs.
