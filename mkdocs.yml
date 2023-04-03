@@ -5,6 +5,7 @@ site_description: User Guides created by the rAthena community. These guides are
 site_author: rAthena Developement Team
 copyright: rAthena
 docs_dir: guides
+site_dir: _site/
 nav:
     - Home: index.md
 theme: readthedocs
