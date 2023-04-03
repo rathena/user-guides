@@ -3,7 +3,7 @@ This guide covers how to quickly get rAthena running on any OS by using Docker. 
 Code that you should run in your console/SSH application is `written like this`.
 
 ## What is Docker and why use it over a native installation?
-One of the main benefits of Docker is the replicability of your environment doesn't matter the host OS. As you only gotta have the Docker daemon/engine running and you're good to go.
+One of the main benefits of Docker is the ability to replicate your environment, no matter the host OS, as you only need the Docker daemon/engine running and you're good to go.
 
 ## Pre-Requisites
 
@@ -12,11 +12,11 @@ One of the main benefits of Docker is the replicability of your environment does
 * Familiarity with StackOverflow in case anything goes wrong
 
 ### Installing Requirements
-First, you gotta get Docker engine up and running. You can get this done by following the official [Docker guides](https://docs.docker.com/get-docker/). Once you get to the part you install `docker-compose` you're good to go.
+First, you need to get Docker engine up and running. You can get this done by following the official [Docker guides](https://docs.docker.com/get-docker/). Once you get to the part where you install `docker-compose` you're good to go.
 
 A few basic commands to remember:
 * `docker-compose up -d` - This will start all the services defined in `docker-compose.yml` and detach the terminal. You can run without the `-d` to keep the logs attached.
-* `docker-compose down` - If you have previously dettached, you can run this command next to the `docker-compose-yml` file to shut every service down gracefully.
+* `docker-compose down` - If you have previously dettached, you can run this command next to the `docker-compose.yml` file to shut every service down gracefully.
 * `docker logs <container name>` - Will print the last lines of logs of a given container
 * `docker ps` - Will list all the containers you have _running_
 
@@ -65,7 +65,7 @@ This is a special container we've created so you're able to build the source wit
 ```
 
 3. Login/Char/Map servers  
-This part is where we define each of our executables/servers to run independently. The differences between the servers will the `command` property which will contain the specific server that container will launch and the `depends_on` which specificies which other container should be up before initializing.
+This part is where we define each of our executables/servers to run independently. The differences between the servers will be the `command` property which will contain the specific server that container will launch and the `depends_on` which specifies which other container should be up before initializing.
 ```yml
 login:
         image: "rathena:local"
@@ -102,7 +102,7 @@ login:
  4. After a while we can see that the compilation has finished once we see `rathena-builder exited with code 0`
 <img width="616" alt="build finished" src="https://user-images.githubusercontent.com/13068064/229597246-9b00646b-e13d-4c4f-8212-8222023ab605.png">
 
-5. Now all we gotta do is to `ctrl+c` to stop everything and then `docker-compose up`
+5. Now all we need to do is `ctrl+c` to stop everything and then `docker-compose up`
 <img width="1356" alt="start" src="https://user-images.githubusercontent.com/13068064/229597566-a8d38ab9-f2a6-4848-a95c-1fb5af1d39af.png">
 
 And that's all about it. You've installed one thing on your host computer (a bit more if you count the depdencies to get docker runner) and now you have rAthena running. Once you stop the containers it will be like you never had a rAthena running on your machine.
