@@ -11,6 +11,7 @@ nav:
     - Installing rAthena:
       - General: installing.md
       - Installing on Debian: installing/debian.md
+      - Running with Docker: installing/docker.md
     #- Network Settings: network-settings.md
     #- MySQL Tables: mysql-tables.md
     - Links:
