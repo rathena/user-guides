@@ -13,6 +13,7 @@ nav:
       - Installing on Debian: installing/debian.md
     #- Network Settings: network-settings.md
     #- MySQL Tables: mysql-tables.md
+    - Extensions: extensions.md
     - Links:
       - Github: https://github.com/rathena/
       - Forums: https://rathena.org/board/
