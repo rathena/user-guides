@@ -9,7 +9,7 @@ One of the main benefits of Docker is the ability to replicate your environment,
 
 ### In General
 * A basic understanding of Linux based Operating Systems.
-* Familiarity with StackOverflow in case anything goes wrong
+* Familiarity with StackOverflow in case anything goes wrong.
 
 ### Installing Requirements
 First, you need to get Docker engine up and running. You can get this done by following the official [Docker guides](https://docs.docker.com/get-docker/). Once you get to the part where you install `docker-compose` you're good to go.
@@ -17,8 +17,8 @@ First, you need to get Docker engine up and running. You can get this done by fo
 A few basic commands to remember:
 * `docker-compose up -d` - This will start all the services defined in `docker-compose.yml` and detach the terminal. You can run without the `-d` to keep the logs attached.
 * `docker-compose down` - If you have previously dettached, you can run this command next to the `docker-compose.yml` file to shut every service down gracefully.
-* `docker logs <container name>` - Will print the last lines of logs of a given container
-* `docker ps` - Will list all the containers you have _running_
+* `docker logs <container name>` - Will print the last lines of logs of a given container.
+* `docker ps` - Will list all the containers you have _running_.
 
 ### Understanding the docker-compose.yml
 In this file you'll find how the magic really happens. Jokes aside, there's no magic, it's kinda easy once you wrap your head around it.
@@ -99,18 +99,18 @@ login:
 3. If we observe the logs, we'll be able to see that the `rathena-builder` container is yielding a bunch of logs. If you ever compiled with `make` you'll find those familiar.
 <img width="545" alt="builder logs" src="https://user-images.githubusercontent.com/13068064/229595637-946c2541-d04c-4f65-87b1-2e48ca2659e5.png">
  
- 4. After a while we can see that the compilation has finished once we see `rathena-builder exited with code 0`
+ 4. After a while we can see that the compilation has finished once we see `rathena-builder exited with code 0`.
 <img width="616" alt="build finished" src="https://user-images.githubusercontent.com/13068064/229597246-9b00646b-e13d-4c4f-8212-8222023ab605.png">
 
-5. Now all we need to do is `ctrl+c` to stop everything and then `docker-compose up`
+5. Now all we need to do is press `ctrl+c` to stop everything and then `docker-compose up`.
 <img width="1356" alt="start" src="https://user-images.githubusercontent.com/13068064/229597566-a8d38ab9-f2a6-4848-a95c-1fb5af1d39af.png">
 
-And that's all about it. You've installed one thing on your host computer (a bit more if you count the depdencies to get docker runner) and now you have rAthena running. Once you stop the containers it will be like you never had a rAthena running on your machine.
+And that's all there is to it. You've installed one thing on your host computer (a bit more if you count the depdencies to get docker runner) and now you have rAthena running. Once you stop the containers it will be like you never had rAthena running on your machine.
 
 ### Recompiling
-If you want to recompile so your changes are applied, all you gotta do is
-1. First stop everything by hitting `ctrl+c` if you haven't dettached with `docker-compose up -d`
-2. Run `docker-compose run builder bash`
+If you make changes to the rAthena src directory, you will need to recompile to apply those changes.
+1. Stop everything by pressing `ctrl+c` if you haven't dettached with `docker-compose up -d`.
+2. Run `docker-compose run builder bash`.
 
 This will start the builder container and give you access to its terminal, and from there you can run `make` commands to build like within any other VPS. Eg:
 
