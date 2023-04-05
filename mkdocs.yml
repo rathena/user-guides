@@ -10,7 +10,8 @@ nav:
     - Guides Home: index.md
     - Installing rAthena:
       - General: installing.md
-      - Installing on Debian: installing/debian.md
+      - Debian: installing/debian.md
+      - Docker: installing/docker.md
     #- Network Settings: network-settings.md
     #- MySQL Tables: mysql-tables.md
     - Extensions: extensions.md
