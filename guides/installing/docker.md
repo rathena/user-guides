@@ -15,6 +15,7 @@ One of the main benefits of Docker is the ability to replicate your environment,
 First, you need to get Docker engine up and running. You can get this done by following the official [Docker guides](https://docs.docker.com/get-docker/). Once you get to the part where you install `docker-compose` you're good to go.
 
 A few basic commands to remember:
+
 * `docker-compose up -d` - This will start all the services defined in `docker-compose.yml` and detach the terminal. You can run without the `-d` to keep the logs attached.
 * `docker-compose down` - If you have previously dettached, you can run this command next to the `docker-compose.yml` file to shut every service down gracefully.
 * `docker logs <container name>` - Will print the last lines of logs of a given container.
