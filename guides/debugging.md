@@ -29,6 +29,16 @@ This is when breakpoints and the `Call Stack` window come to place.
 
 Once your code is stopped at any breakpoint, you should see at the bottom a window called `Call Stack`. Those items in the list are from top to bottom, the order of execution the code has taken until the line you put a breakpoint.
 
+## Taking breakpoints a bit further
+Using breakpoints sometimes can couse some harm, for instance, when you're debugging something that happens very quickly and in rapid succession. You'll have no time of alt tabbing back and forth between server and client because the server will be always paused on the breakpoint.
+
+In that case, you can right-click on a breakpoint and select either `Conditions...` or `Actions...`.
+
+- Conditions  
+You can choose a condition to trigger the breakpoint, let's say you want it to stop only when a certain skill is triggered, just put the evaluation there. Eg: `md->skillid == 1234`. Note: this is extremely slow.
+- Actions  
+Instead of actually pausing the execution you can use this to execute a piece of code whenever a breakpoint is hit, instead of having to recompile to add a simple log, you can use this to add logs at will without the impact of the Conditional Breakpoints. In order for the breakpoint not stop the code execution you will to tick the checkbox right below the text field, something like `Continue code execution`.
+
 ### Anything missing?
 
 Should you have any questions, don't hesitate to ask questions at our discord. We'll be happy to help.
