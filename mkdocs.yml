@@ -14,7 +14,7 @@ nav:
       - Docker: installing/docker.md
     #- Network Settings: network-settings.md
     #- MySQL Tables: mysql-tables.md
-    - Debugging: debugging.md
+    - MSVS Debugging: debugging.md
     - Extensions: extensions.md
     - Links:
       - Github: https://github.com/rathena/
