@@ -1,7 +1,7 @@
 Did you ever see yourself placing `ShowDebug` everywhere in the code with comments like `Been here`, `If ok` and etc, just for trying to understand why your new groundbreaking feature isn't working correctly? The solution is called breakpoints.
 
 ## What is debugging?
-Simply put, debugging is the ability to put breakpoints in your code and when the server will take that given path, it will pause the rest of the execution, and once it's paused you can inspect variables values, evaluate expressions directly on the `Immediate Window` and so on.
+Simply put, debugging is the ability to put breakpoints in your code and when the server takes that given path it will pause the rest of the execution. This allows you to inspect variable values, evaluate expressions directly on the `Immediate Window`, and more.
 
 ## Video
 
