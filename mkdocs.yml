@@ -1,9 +1,10 @@
 site_name: rAthena User Guides
 site_url: https://rathena.github.io/user-guides/
 repo_url: https://github.com/rathena/user-guides/
+repo_name: rathena/user-guides
 site_description: User Guides created by the rAthena community. These guides are generated from a Github repository and turned into an easy to use website.
 site_author: rAthena Developement Team
-copyright: Copyright rAthena Development Team, 2011 - 2023
+copyright: Copyright(c) rAthena Development Team, 2011 - 2023
 docs_dir: guides
 site_dir: _site/
 
@@ -23,36 +24,29 @@ nav:
       - Wiki: https://rathena.org/wiki/
       - Discord: https://discord.gg/kMeMXWEvSV
 theme:
+  icon:
+    repo: fontawesome/brands/github-alt 
   font:
     text: Roboto
     code: Roboto Mono
   favicon: img/favicon.ico
-  logo: img/logo_user-guides.png
+  logo: img/ra_user_guides_logo.png
   name: material
   features:
     - announce.dismiss
-    # - content.action.edit
-    # - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    # - navigation.prune
-    # - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
   language: en
   palette:
     - scheme: default
@@ -102,10 +96,6 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
-  # - pymdownx.magiclink:
-  #     repo_url_shorthand: true
-  #     user: squidfunk
-  #     repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
@@ -118,3 +108,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - git-revision-date-localized:
+      type: timeago
+      fallback_to_build_date: true
