@@ -27,7 +27,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: img/favicon.ico
-  logo: img/logo.png
+  logo: img/logo_user-guides.png
   name: material
   features:
     - announce.dismiss
