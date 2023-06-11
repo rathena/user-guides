@@ -191,8 +191,6 @@ Since we are using MkDocs to serve the documentation, we can get to use of the p
 
     </div>
 
-    [changing the title]: #changing-the-title
-    [collapsible blocks]: #collapsible-blocks
 
     **Collapsible blocks**
 
