@@ -196,7 +196,7 @@ Since we are using MkDocs to serve the documentation, we can get to use of the p
 
     **Collapsible blocks**
 
-    When [Details] is enabled and an admonition block is started with `???` instead
+    When an admonition block is started with `???` instead
     of `!!!`, the admonition is rendered as a collapsible block with a small toggle
     on the right side:
 
