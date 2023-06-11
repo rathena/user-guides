@@ -23,6 +23,7 @@ nav:
       - Forums: https://rathena.org/board/
       - Wiki: https://rathena.org/wiki/
       - Discord: https://discord.gg/kMeMXWEvSV
+      - Contribute: CONTRIBUTING.md
 theme:
   icon:
     repo: fontawesome/brands/github-alt 
@@ -53,14 +54,14 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: light blue
-      accent: teal
+      primary: custom
+      accent: cyan
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: light blue
-      accent: teal
+      primary: custom
+      accent: cyan
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -115,3 +116,6 @@ plugins:
   - git-revision-date-localized:
       type: timeago
       fallback_to_build_date: true
+
+extra_css:
+  - stylesheets/extra.css
