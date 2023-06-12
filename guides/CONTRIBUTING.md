@@ -111,7 +111,7 @@ Lists can be used to display data in a list format. To create a list, you can us
 
 ### MkDocs Goodies
 
-Since we are using MkDocs to serve the documentation, we can get to use of the plugins and extensions it provides;
+Since we are using MkDocs for our documentation, we can take advantage of the plugins and extensions that MkDocs has to offer;
 
 === "Admonitions"
 
