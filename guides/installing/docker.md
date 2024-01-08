@@ -15,9 +15,13 @@ One of the main benefits of Docker is the ability to replicate your environment,
 First, you need to get Docker engine up and running. You can get this done by following the official [Docker guides](https://docs.docker.com/get-docker/). Once you get to the part where you install `docker-compose` you're good to go.
 
 A few basic commands to remember:
+
 * `docker-compose up -d` - This will start all the services defined in `docker-compose.yml` and detach the terminal. You can run without the `-d` to keep the logs attached.
+
 * `docker-compose down` - If you have previously dettached, you can run this command next to the `docker-compose.yml` file to shut every service down gracefully.
+
 * `docker logs <container name>` - Will print the last lines of logs of a given container.
+
 * `docker ps` - Will list all the containers you have _running_.
 
 ### Understanding the docker-compose.yml
@@ -25,7 +29,7 @@ In this file you'll find how the magic really happens. Jokes aside, there's no m
 
 Inside the `services` block, you'll find every `service` a.k.a `container` we'll start once we run our `up` command.
 
-1. Database
+#### Database
 ```yml
     db: # service name (this is the name docker uses to communicate to this container internally
         image: "mariadb:bionic" # container image (what it will be running)
@@ -42,7 +46,7 @@ Inside the `services` block, you'll find every `service` a.k.a `container` we'll
             MYSQL_PASSWORD: ragnarok
 ```
 
-2. Builder  
+#### Builder  
 This is a special container we've created so you're able to build the source without much hassle. That's because the other services (map/char/login) will crash and exit as soon as you start them, or if the server was already compiled they will start the server and then you won't be able to finish compiling.
 ```yml
     builder:
@@ -64,7 +68,7 @@ This is a special container we've created so you're able to build the source wit
             BUILDER_CONFIGURE: "--enable-packetver=20211103" # here you can pass whatever you would pass to the `./configure` command
 ```
 
-3. Login/Char/Map servers  
+#### Login/Char/Map servers  
 This part is where we define each of our executables/servers to run independently. The differences between the servers will be the `command` property which will contain the specific server that container will launch and the `depends_on` which specifies which other container should be up before initializing.
 ```yml
 login:
@@ -90,7 +94,6 @@ login:
 
 ### Setting up the server
 1. After cloning the rAthena repo, you should open the project folder in the terminal. In my case I've cloned the project to `Documents/Personal/rathena`, so I've cd'ed to that folder.
-
 <img width="575" alt="console" src="https://user-images.githubusercontent.com/13068064/229590462-9e7a85eb-6e98-4dfb-99ca-4d647ee0b819.png">
 
 2. Then we can cd into `tools/docker` and then we can run the best command in the entire world `docker-compose up`. The very first time we do that command, it will pull the images from Docker hub and then build the server with the parameters specified in the `builder` service.
@@ -109,7 +112,9 @@ And that's all there is to it. You've installed one thing on your host computer 
 
 ### Recompiling
 If you make changes to the rAthena src directory, you will need to recompile to apply those changes.
+
 1. Stop everything by pressing `ctrl+c` if you haven't dettached with `docker-compose up -d`.
+
 2. Run `docker-compose run builder bash`.
 
 This will start the builder container and give you access to its terminal, and from there you can run `make` commands to build like within any other VPS. Eg:

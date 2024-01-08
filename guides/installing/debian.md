@@ -87,17 +87,21 @@ The provided method of running rAthena will work perfectly fine, but this author
 
 ### Provided Method
 Use the following commands
-* To Start:
 
-    `./athena-start start`
+* To Start:
+```
+./athena-start start
+```
 
 * To Stop:
-
-    `./athena-start stop`
+```
+./athena-start stop
+```
 
 * To Restart:
-
-    `./athena-start restart`
+```
+./athena-start restart
+```
 
 
 If you receive an error similar to the following:
