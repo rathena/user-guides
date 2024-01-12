@@ -13,5 +13,20 @@ Each time a commit is pushed to the master branch, the site is automatically reb
 ## Contributing
 If you would like to contribute to this project, please read the [Contributing Guide](CONTRIBUTING.md).
 
+## Development
+You can use the included dockerfile to create a docker container for development. Run the following commands in the root directory of the project (where this file is).
+
+### Build the container
+
+`docker build -f docker/Dockerfile -t ra-user-guides .`
+
+This uses the same base image as the github actions, then installs the extra packages in `.github/requirements.txt`. You only need to do this once, or every time the list of requirements change.
+
+### Run the container
+
+`docker run --rm -it -p 8000:8000 -v ${PWD}:/docs ra-user-guides`
+
+This runs the container we made in step one, mounts our current directory to `/docs` in the container, and opens the `8000` port. This will watch for changes as we make them. You can see the changes in your browser by going to `localhost:8000/user-guides`
+
 ## License
 This project is licensed under the same terms as rAthena's [Source Code](https://github.com/rathena/rathena) - see the [LICENSE](https://github.com/rathena/rathena/blob/master/LICENSE) file for details.
