@@ -10,6 +10,19 @@
 
 Or are you just looking for the [MySQL Installation](mysql) guide?
 
+## Recommended Hosting Providers
+* [DigitalOcean](https://m.do.co/c/18e003a00d57 )
+
+	Using our link will give you $200 in free credit to try any of DigitalOcean's services for 60 days.
+
+	DigitalOcean is a great choice for hosting rAthena. It's cheap, easy to use, and has a great community with many help-topics.
+
+* [OVH](https://www.ovhcloud.com/en-gb/vps/)
+
+	OVH is another great choice for hosting rAthena. It's fairly cheap and runs on a robust network.
+
+*No one at rAthena will **ever** recommend a hosting provider that explicitly advertises "RO Hosting" packages. They are garbage and should be avoided at all costs.*
+
 ## Optional Clone Information
 If you want to have your own forked version but still get updates from the main rAthena repository
 
