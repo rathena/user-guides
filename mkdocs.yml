@@ -52,14 +52,14 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: custom
       accent: cyan
-    - scheme: slate 
+    - scheme: slate
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Switch to light mode
       primary: custom
       accent: cyan
 extra:
@@ -69,7 +69,7 @@ extra:
     - icon: fontawesome/solid/message
       link: https://rathena.org/board/
     - icon: fontawesome/brands/wikipedia-w
-      link: https://rathena.org/wiki/
+      link: https://github.com/rathena/rathena/wiki/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/rathena-96459614895226880
 

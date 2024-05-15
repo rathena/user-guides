@@ -7,6 +7,7 @@ This guide covers the installation via CLI and *does not* include instructions f
 ## Pre-Requisites
 
 ### In General
+
 * A basic understanding of Linux based Operating Systems.
 * A basic understanding of the SSH tool Putty.
 * A basic understanding of MySQL (or RDBMS in general).
@@ -14,9 +15,11 @@ This guide covers the installation via CLI and *does not* include instructions f
 * A basic understanding that "if at first you don't succeed, search the forums" will be your saving-grace in the event of errors.
 
 ### Debian 10
+
 You should ensure that your system is up-to-date by first: `apt-get update`
 
 ### Installing Requirements
+
 We need the following applications to compile rAthena on Debian 10:
 ```
 apt-get install git make libmariadb-dev libmariadbclient-dev libmariadbclient-dev-compat gcc g++ zlib1g-dev libpcre3-dev
@@ -29,6 +32,7 @@ apt-get install -y nano
 ```
 
 ### MySQL
+
 For the installation instructions of MySQL, please see the [relevant installation page](https://github.com/rathena/rathena/wiki/Install-MySQL#linux).
 
 
@@ -36,7 +40,8 @@ For the installation instructions of MySQL, please see the [relevant installatio
 
 rAthena uses git for revision control, and hosts the git repository on Github.
 
-### Cloning 
+### Cloning
+
 You can obtain the latest version of rAthena by typing the following command. This will place rAthena in a folder called rAthena in your home directory, but you are free to change it to whatever you like:
 
 ```
@@ -83,9 +88,11 @@ Recompiling is the same as compiling. You can throw the code into a one-liner, i
 
 
 ## Starting rAthena
+
 The provided method of running rAthena will work perfectly fine, but this author's personal preference is shown below as an *alternative method*.
 
 ### Provided Method
+
 Use the following commands
 
 * To Start:
@@ -114,6 +121,7 @@ You can install dos2unix with `apt-get install dos2unix` and then run `dos2unix 
 You will now be able to use `./athena-start start` after `chmod a+x athena-start`.
 
 ### Alternative Method
+
 Firstly, install `screen`:
 ```
 apt-get install -y screen
@@ -146,6 +154,7 @@ There are screens on:
 ```
 
 ### Connections
+
 If you've just started your servers and get some errors, don't worry, it's because you haven't configured them yet.
 
 We have a handy guide [here](https://github.com/rathena/rathena/wiki/connecting) that will talk you through what you need to change in order to get your servers up and running successfully.
