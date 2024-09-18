@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User Guides Site
+    url: https://rathena.github.io/user-guides/
+    about: View the generated HTML version of this repository.
+  - name: rAthena Community Support
+    url: https://rathena.org/board/forum/3-support-releases/
+    about: Please ask and answer questions here in our forum.
+  - name: rAthena Discord
+    url: https://rathena.org/board/discord/
+    about: Chat with us in the Discord support channel.
