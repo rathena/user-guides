@@ -8,6 +8,9 @@
 * FreeBSD
 * Windows
 
+## Build tools
+* [CMake](cmake)
+
 Or are you just looking for the [MySQL Installation](mysql) guide?
 
 ## Recommended Hosting Providers
