@@ -120,7 +120,7 @@ If you make changes to the rAthena src directory, you will need to recompile to 
 This will start the builder container and give you access to its terminal, and from there you can run `make` commands to build like within any other VPS. Eg:
 
 ```bash
-./configure --enable-packetver=20220404 --enable-pre-re --whatever-other-parameter
+./configure --enable-packetver=20220404 --enable-prere --whatever-other-parameter
 make server
 ```
 
