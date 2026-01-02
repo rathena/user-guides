@@ -16,6 +16,8 @@ nav:
       - Docker: installing/docker.md
     - Configurations:
       - Using Imports: configuration/imports.md
+    - Ide:
+        - Clion: ide/rathena-clion-configuration.md
   # - Network Settings: network-settings.md
   # - MySQL Tables: mysql-tables.md
     - MSVS Debugging: debugging.md
