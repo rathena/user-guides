@@ -1,14 +1,14 @@
 ## Containers and VMs
-* [Docker](docker)
+* [Docker](installing/docker.md)
 
 ## Operating System
 * CentOS
 * Ubuntu
-* [Debian](debian)
+* [Debian](installing/debian.md)
 * FreeBSD
 * Windows
 
-Or are you just looking for the [MySQL Installation](mysql) guide?
+Or are you just looking for the [MySQL Installation](installing/mysql.md) guide?
 
 ## Recommended Hosting Providers
 * [DigitalOcean](https://m.do.co/c/18e003a00d57 )

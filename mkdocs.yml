@@ -16,6 +16,22 @@ nav:
       - Docker: installing/docker.md
     - Configurations:
       - Using Imports: configuration/imports.md
+    - Scripting:
+      - Adding Scripts: scripting/adding.md
+      - Basics: scripting/basics.md
+      - Commands: https://github.com/rathena/rathena/blob/master/doc/script_commands.txt
+      - Overview of Errors: scripting/errors.md
+      - Tips and Tricks: scripting/tips.md
+      - Mapflags: scripting/mapflags.md
+      - Monster Spawns: scripting/monster-spawn.md
+      - NPC:
+        - Loops: scripting/loops.md
+        - Timers: scripting/timers.md
+        - Variables: scripting/variables.md
+        - Menus: scripting/menus.md
+      - Warp Points: scripting/warp-points.md
+      - Shops: scripting/shop-creation.md
+      - War of Emperium: scripting/woe.md
   # - Network Settings: network-settings.md
   # - MySQL Tables: mysql-tables.md
     - MSVS Debugging: debugging.md
@@ -91,8 +107,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
